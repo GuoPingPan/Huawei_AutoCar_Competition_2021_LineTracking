@@ -1,0 +1,8 @@
+<launch>
+
+	<node name="saveTracking" pkg="linetracking" type="saveTrajectory">
+		<param name="target_frame" value="/odom"/>
+		<param name="source_frame" value="/laser"/>
+	</node>
+
+</launch>

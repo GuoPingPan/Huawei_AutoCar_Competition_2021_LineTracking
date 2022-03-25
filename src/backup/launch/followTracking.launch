@@ -1,0 +1,10 @@
+<launch>
+
+	<node name="followTracking" pkg="backup" type="followTrajectory" output="sreen">
+		<param name="trajectory" value="${HOME}/ros_ws/src/linetracking/dataset/Tractory85.txt"/>
+		<param name="target_frame" value="/laser"/>
+		<param name="source_frame" value="/odom"/>
+	</node>
+
+
+</launch>
